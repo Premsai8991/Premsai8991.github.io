@@ -10,11 +10,17 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         header {
             background: #333;
@@ -61,6 +67,17 @@
             margin-top: 10px;
             border-radius: 5px;
         }
+        .light {
+            padding: 15px;
+            background: #f4f4f4;
+            color: #333;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .content-title {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -71,12 +88,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#publications">Publications</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -84,7 +101,9 @@
 
     <section id="about" class="container">
         <h2>About Me</h2>
-        <p>Aspiring PhD candidate in Computer Engineering with a solid foundation in computer science (M.S. from FAU, GPA: 3.47) and electronics and communication engineering (B.Tech). Seeking to leverage comprehensive knowledge in IoT, cloud security, and VLSI design, alongside a proven track record of academic projects and research publications, to contribute to FAU’s research endeavors in cutting-edge technologies.</p>
+        <p>
+            Welcome to my personal webpage! I am Naga Prem Sai Nellure, a dedicated and innovative PhD candidate in Computer Engineering. With a solid academic foundation in computer science (M.S. from FAU, GPA: 3.47) and electronics and communication engineering (B.Tech), I am passionate about leveraging cutting-edge technologies to solve real-world problems. My expertise lies in IoT, cloud security, and VLSI design, and I have a proven track record of impactful academic projects and research publications. I am driven by a desire to contribute to groundbreaking research at FAU and beyond, and to push the boundaries of technology for a better future.
+        </p>
     </section>
 
     <section id="education" class="container">
@@ -125,12 +144,44 @@
     <section id="projects" class="container">
         <h2>Projects</h2>
         <div class="dark">
-            <h3>Upload Image Manager (Cloud-Based Photo Storage and Management Application)</h3>
-            <p>Led the development of ”Upload Image Manager,” a Google Cloud-based photo storage app using Flask, focusing on security with JWT, scalability via microservices, and enhanced user experience, all while leveraging CI/CD pipelines for efficient cloud-native deployment and system management.</p>
+            <h3>Smart Blood Oxygen and Heart Rate Monitor with Automatic Data Saving System</h3>
+            <p>Designed and developed a smart device to monitor blood oxygen levels and heart rate, featuring an automatic data saving system for continuous health tracking. This project utilized sensors, microcontrollers, and data storage components to provide real-time monitoring and data logging.</p>
         </div>
         <div class="dark">
-            <h3>Automated Voice Control Car Using ESP32</h3>
-            <p>Developed a pioneering voice-controlled car with ESP32 and Google Assistant, demonstrating advanced IoT and embedded systems expertise to enhance navigation and redefine vehicle control.</p>
+            <h3>Smart Door Camera with Facial Recognition Feature for Thermal Screening</h3>
+            <p>Implemented a smart door camera system that incorporates facial recognition for secure access and thermal screening for health safety. This project combined camera modules, facial recognition algorithms, and thermal sensors to enhance home security and safety measures.</p>
+        </div>
+        <div class="dark">
+            <h3>Automated Voice Controlled Car Using ESP32</h3>
+            <p>Developed an innovative voice-controlled car using the ESP32 microcontroller and Google Assistant, enhancing vehicle navigation and control. This project showcased advanced IoT and embedded systems expertise, integrating voice recognition and automation technologies.</p>
+            <p><a href="https://www.electronicwings.com/users/sanketmallawat91/projects/108/automated-voice-control-car-using-esp32" target="_blank">Project Link</a></p>
+        </div>
+        <div class="dark">
+            <h3>Internet of Vehicles</h3>
+            <p>Successfully designed and implemented an Internet of Vehicles (IoV) system for real-time monitoring and control of connected vehicles. This project utilized GPS, GSM, Wi-Fi, and sensors to enhance the functionality, providing a user-friendly interface for remote monitoring and control, improving efficiency, and reducing response times.</p>
+        </div>
+        <div class="dark">
+            <h3>Configurable Employee Hiring Documentation Organizer</h3>
+            <p>Designed and developed a scalable system to streamline the hiring process by organizing documentation efficiently. This project allowed HR departments to customize and configure the system according to their needs, reducing manual efforts, minimizing errors, and increasing transparency.</p>
+        </div>
+        <div class="dark">
+            <h3>Upload Image Manager</h3>
+            <p>Developed "Upload Image Manager," a cloud-based photo storage and management application using the Flask framework, deployed on Google Cloud Platform. Integrated features for secure and scalable photo storage, supporting various image formats and managing large data volumes. Implemented JWT for secure user authentication and employed microservices and containers for scalability and portability.</p>
+        </div>
+        <div class="dark">
+            <h3>Digital Alarm Clock (VLSI)</h3>
+            <p>Engineered a Digital Alarm Clock using VLSI principles, focusing on the design and implementation of integrated circuits. Utilized ModelSim software for simulation and testing, ensuring functionality and reliability. Designed the clock’s circuitry for low power consumption and high accuracy, incorporating time display, alarm setting, and triggering mechanisms.</p>
+        </div>
+        <div class="dark">
+            <h3>Comprehensive Cloud Security Implementation</h3>
+            <p>This project combines multiple assignments focused on various aspects of cloud security, providing a holistic approach to securing cloud environments. The project was conducted as part of the Cloud Security course under Professor Rhian Resnick at FAU.</p>
+            <ul>
+                <li><b>Container Security and Deployment:</b> Designed and implemented secure containers using OwlCloud. Utilized GitLab for version control, pipelines for CI/CD, and Kubernetes for container orchestration.</li>
+                <li><b>Securing Secrets in OwlCloud:</b> Implemented secure storage and management of secrets in OwlCloud using Kubernetes, including creating encrypted secrets and configuring Key Management Services (KMS).</li>
+                <li><b>Active Monitoring and Health Checks:</b> Developed an active monitoring system for cloud applications, incorporating health checks and readiness probes for real-time monitoring and alerts.</li>
+                <li><b>Identity Federation and RBAC (LDAP):</b> Configured and deployed LDAP for identity federation and role-based access control (RBAC) in cloud environments.</li>
+                <li><b>Leveraging Kali Linux for Enhanced Cloud Security:</b> Utilized Kali Linux to enhance cloud security through penetration testing, network traffic analysis, and security assessments.</li>
+            </ul>
         </div>
     </section>
 
@@ -151,8 +202,8 @@
         <h2>Contact</h2>
         <p>Email: <a href="mailto:nnellure2022@fau.edu">nnellure2022@fau.edu</a></p>
         <p>Phone: 561-344-2430</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/nellure-naga-prem-sai">linkedin.com/in/nellure-naga-prem-sai</a></p>
-        <p>GitHub: <a href="https://github.com/Premsai8991">github.com/Premsai8991</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nellure-naga-prem-sai" target="_blank">linkedin.com/in/nellure-naga-prem-sai</a></p>
+        <p>GitHub: <a href="https://github.com/Premsai8991" target="_blank">github.com/Premsai8991</a></p>
     </section>
 
     <footer>
